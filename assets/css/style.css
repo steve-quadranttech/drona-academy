@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;900&display=swap');
+
+/* Global */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    background-color: #F9F9F9;
+    overflow-x: hidden;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+h1 {
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn-main {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #00D685;
+    padding: 10px 40px;
+    border: 1px solid #00D685;
+    border-radius: 30px;
+    position: relative;
+    outline: none;
+    transition: .3s ease;
+    overflow: hidden;
+}
+
+.btn-main::before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background-color: #fff;
+    z-index: 20;
+    transition: .3s ease;
+}
+
+.btn-main:hover::before {
+    height: 100%;
+}
+
+.btn-main:hover span {
+    position: relative;
+    color: #00D685;
+    z-index: 299;
+}
+
+.section-padding {
+    margin-top: 80px;
+}
+
+
+/* Header */
+
+header {
+    margin: 40px 0 0;
+    text-align: center;
+}
+
+.logo {
+    width: 255px;
+}
+
+header ul {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+header ul li {
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: .3s ease;
+}
+
+header ul li:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Banner */
+
+.drona-banner img {
+    width: 100%;
+}
+
+.drona-banner h4 {
+    color: #282828;
+}
+
+.vector-yellow,
+.vector-yellow span {
+    position: relative;
+    z-index: 99;
+}
+
+.vector-yellow::before {
+    display: block;
+    content: '';
+    background-image: url(../images/yellow-vector.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 160px;
+    height: 45px;
+    z-index: 20;
+}
+
+.vector-top::before {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+}
+
+.drona-banner button {
+    margin-top: 35px;
+}
+
+
+/* Career */
+
+.career {
+    position: relative;
+    padding: 160px 0 80px;
+}
+
+.career::before {
+    z-index: 99;
+    background-color: #fff;
+    width: 80%;
+    height: 80vh;
+    display: block;
+    content: '';
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    border-radius: 0 30px 30px 0;
+}
+
+.career::after {
+    width: 84%;
+    height: 78vh;
+    display: block;
+    content: '';
+    z-index: 20;
+    position: absolute;
+    top: 80px;
+    left: -7px;
+    border-radius: 0 30px 30px 0;
+    border: 4px solid #231F20;
+}
+
+.vector-bottom {
+    width: fit-content;
+    margin: auto;
+}
+
+.vector-bottom::before {
+    position: absolute;
+    width: 60%;
+    bottom: -15px;
+    right: 4px;
+}
+
+.career-inner {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    z-index: 99;
+}
+
+.career ul {
+    margin-top: 40px;
+}
+
+.list li p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #282828;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.list li p::before {
+    display: inline-block;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/chevron-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+}
+
+.career-vector {
+    margin-top: -7rem;
+    position: relative;
+    z-index: 10;
+}
+
+
+/* Bootcamp */
+
+.bootcamp {
+    margin-top: -20rem;
+    position: relative;
+    z-index: 299;
+}
+
+.bootcamp .title {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.bootcamp .icon-row {
+    margin-top: 80px;
+}
+
+.bootcamp .icon-div {
+    text-align: center;
+}
+
+.icon-div .icon {
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+.icon-div h4 {
+    width: 75%;
+    margin: auto;
+}
+
+.bootcamp-row {
+    margin-top: 80px;
+}
+
+.bootcamp-info {
+    width: 90%;
+}
+
+.bootcamp-info img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.bootcamp-info h2 {
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.bootcamp-info p {
+    line-height: 1.5;
+}
+
+.vector-top2 {
+    width: fit-content;
+}
+
+.vector-top2::before {
+    position: absolute;
+    top: 5px;
+    right: 4px;
+}
+
+
+/* Course Will Cover */
+
+.list li button {
+    font-size: 18px;
+    font-weight: 500;
+    color: #282828;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    transition: .3s ease;
+}
+
+.list li button::before {
+    display: inline-block;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-image: url('../images/chevron-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+}
+
+.vector-top3::before {
+    position: absolute;
+    left: 20%;
+    top: 5px;
+}
+
+.cover-left {
+    position: relative;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    background-color: #fff;
+}
+
+.course-row {
+    max-height: 600px;
+    position: relative;
+    z-index: 299;
+}
+
+.course-cover ul {
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+.cover-right {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    border-bottom-right-radius: 30px;
+}
+
+.course-cover {
+    position: relative;
+}
+
+.cover-right img {
+    height: inherit;
+    width: 100%;
+}
+
+.list-sm button.active {
+    color: #00D685;
+}
+
+.course-cover .btn-main {
+    margin: 80px auto 0;
+    position: relative;
+    z-index: 299;
+    display: block;
+}
+
+.course-vector {
+    position: absolute;
+    z-index: 10;
+    bottom: -10rem;
+}
+
+
+/* Bootcamp Dates */
+
+.bootcamp-dates {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.bootcamp-dates h2 {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+.date-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.date {
+    padding: 30px 50px;
+    background-color: #fff;
+    transition: .3s ease;
+    border-radius: 10px;
+}
+
+.date:hover {
+    box-shadow: 2px 2px 25px #00000010;
+}
+
+.date1 {
+    margin-right: 30px;
+}
+
+.date p {
+    margin-bottom: 8px;
+}
+
+.date h4 {
+    color: #008DC2;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.date-bottom {
+    margin-top: 40px;
+}
+
+.date-bottom span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #008DC2;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #282828;
+    padding: 80px 0;
+    position: relative;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.footer-vector {
+    position: absolute;
+    top: -15px;
+    z-index: 20;
+}
+
+.footer-img {
+    position: absolute;
+    top: 0;
+    z-index: 199;
+    right: 0;
+    width: 20%;
+}
+
+footer a,
+footer a:hover {
+    color: #fff;
+}
+
+.logo-bottom {
+    width: 255px;
+    margin-bottom: 30px;
+}
+
+footer p {
+    width: 60%;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.footer-inner {
+    position: relative;
+    z-index: 299;
+}
+
+footer ul {
+    margin-top: 130px;
+}
+
+footer ul li {
+    margin-bottom: 15px;
+    transition: .3s ease;
+}
+
+footer ul li:hover {
+    transform: translateX(10px);
+}
+
+.footer-form {
+    margin-top: 30px;
+}
+
+footer input,
+footer textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+footer input:focus,
+footer textarea:focus {
+    outline: none;
+}
